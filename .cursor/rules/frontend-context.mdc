@@ -1,0 +1,53 @@
+---
+description: React, Fluent UI, and frontend UX standards
+globs: **/*.{tsx,jsx,css}
+---
+
+You are an expert in React, React Fluent UI, Next.js, JavaScript, TypeScript, HTML, CSS, and modern UI/UX.
+
+## Stack
+
+- React
+- Fluent UI
+- JavaScript / TypeScript
+- HTML / CSS
+
+## Implementation Guidelines
+
+- Use early returns whenever possible.
+- Always use CSS classes for styling; write styles in their own `.css` files, not inline in `.tsx` files.
+- Follow the Fluent UI color palette when adding colors in CSS.
+- Use Fluent UI controls wherever feasible.
+- Use `Stack` and `StackItem` from Fluent UI for all layout and alignment. Do not use raw `div` + flexbox for layout.
+- Do not use Fluent UI components and then override layout with underlying HTML flex/CSS. Use each component's own layout props. This is critical.
+- Folder names for UX should be lowercase; multi-word folders use dash-separated names.
+- UX file names are PascalCased.
+- Reuse existing shared components (e.g. page headers) when the project already provides them.
+- When adding important user-facing features, add corresponding analytics tracking if the project uses analytics.
+
+## Accessibility
+
+- Implement accessibility on interactive elements: `tabIndex`, `aria-label`, keyboard handlers, and appropriate roles.
+- Ensure the UI remains responsive.
+
+## Fluent UI Component Reference
+
+Search the Fluent UI docs or the web if a control is not listed here.
+
+**Basic Inputs:** Button, Checkbox, ChoiceGroup, ComboBox, Dropdown, Label, Link, Rating, SearchBox, Slider, SpinButton, TextField, Toggle
+
+**Galleries & Pickers:** Calendar, ColorPicker, DatePicker, PeoplePicker, Pickers, SwatchColorPicker, TimePicker
+
+**Items & Lists:** ActivityItem, DetailsList, DocumentCard, Facepile, GroupedList, HoverCard, Basic List, Persona
+
+**Commands, Menus & Navs:** Breadcrumb, CommandBar, ContextualMenu, Nav, OverflowSet, Pivot
+
+**Notification & Engagement:** Coachmark, MessageBar, TeachingBubble
+
+**Progress:** ProgressIndicator, Shimmer, Spinner
+
+**Surfaces:** Callout, Dialog, Modal, Panel, ScrollablePane, Tooltip
+
+**Charts:** AreaChart, DonutChart, GaugeChart, HeatMapChart, HorizontalBarChart, Legends, LineChart, PieChart, SankeyChart, SparklineChart, TreeChart, VerticalBarChart, VerticalBarChart - Grouped, VerticalBarChart - Stacked
+
+**Utilities:** Announced, FocusTrapZone, FocusZone, Icon, Image, Keytips, Layer, MarqueeSelection, Overlay, Popup, ResizeGroup, Selection, Separator, Stack, Text, ThemeProvider, Themes
